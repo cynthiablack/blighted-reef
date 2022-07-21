@@ -13,11 +13,23 @@ body {
     min-height: 100vh;
 }
 
+.clear {
+    clear: both;
+}
+
 *, *::before, *::after {
     box-sizing: inherit;
 }
 
 /** Layout **/
+
+.column-left {
+    grid-column: 2;
+}
+
+.column-right {
+    grid-column: 3;
+}
 
 .hero {
     height: 600px;
@@ -31,6 +43,21 @@ body {
 
 .logo {
     max-width: 80px;
+}
+
+#classes,
+#menu {
+    padding: 1vw;
+    text-align: center;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: 4;
+}
+
+#menu > h2 {
+    grid-column: 1 / span 4;
 }
 
 nav {
@@ -65,7 +92,10 @@ a, a::before, a::after {
 
 .cursive {
     font-family: 'Sacramento', cursive;
-    font-size: 4rem;
+}
+
+.cursive h1 {
+    font-size: 6rem;
 }
 
 fa-solid,
@@ -84,6 +114,14 @@ h1 {
 
 h2 {
     font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+.itallic {
+    font-style: italic;
 }
 
 /** Decorative Styling **/
