@@ -85,16 +85,17 @@ h2 {
 /** Hero Slider **/
 
 .carousel {
+    background-color: aliceblue;
     position: relative;
     height: 600px;
-    width: 80%;
+    width: 600px;
     margin: 0 auto;
 }
 
 .carousel__image {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .carousel__track-container {
