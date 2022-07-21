@@ -238,3 +238,18 @@ h3 {
         max-width: 40px;
     }
 }
+
+@media (max-width: 900px) {
+    .hero > img {
+        margin:-10vh 0 2vh 0;
+        width: 100%;
+    }
+
+    .carousel__button--left {
+        left: -50px;
+    }
+
+    .carousel__button--right {
+        right: -50px;
+    }
+}
