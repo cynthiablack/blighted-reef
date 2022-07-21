@@ -19,6 +19,16 @@ body {
 
 /** Layout **/
 
+.hero {
+    height: 600px;
+    overflow: hidden;
+}
+
+.hero > img {
+    margin:-40vh 0 2vh 0;
+    width: 100%;
+}
+
 .logo {
     max-width: 80px;
 }
