@@ -23,12 +23,19 @@ body {
 
 /** Layout **/
 
+footer {
+    padding-top: 5vh;
+    text-align: center;
+  }
+
 .column-left {
     grid-column: 2;
+    width: 80%;
 }
 
 .column-right {
     grid-column: 3;
+    width: 80%;
 }
 
 .hero {
