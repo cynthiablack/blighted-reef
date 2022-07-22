@@ -225,7 +225,7 @@ h3 {
 }
 
 /** Media Queries **/
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .carousel {
         height: 350px;
         width: 350px;
@@ -268,14 +268,48 @@ h3 {
 
 
 @media (max-width: 600px) {
-    nav {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
+    .carousel {
+        height: 350px;
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .carousel__button--left,
+    .carousel__button--right {
+        display: none;
+    }
+
+    #classes {
+        line-height: 1.5;
+    }
+
+    #classes,
+    #menu {
+        display: inline;
+        margin: auto;
+        position: relative;
+        top: -45vh;
+    }
+
+    .column-left,
+    .column-right {
+        margin: auto;
+        padding: 0;
+    }
+
+    footer {
+        position: relative;
+        top: -200px;
     }
 
     .logo {
         max-width: 40px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
     }
 }
 
