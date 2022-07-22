@@ -22,12 +22,6 @@ body {
 }
 
 /** Layout **/
-
-footer {
-    padding-top: 5vh;
-    text-align: center;
-  }
-
 .column-left {
     grid-column: 2;
     width: 80%;
@@ -37,6 +31,11 @@ footer {
     grid-column: 3;
     width: 80%;
 }
+
+footer {
+    padding-top: 5vh;
+    text-align: center;
+  }
 
 .hero {
     height: 600px;
@@ -226,6 +225,47 @@ h3 {
 }
 
 /** Media Queries **/
+@media (max-width: 400px) {
+    .carousel {
+        height: 350px;
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .carousel__button--left,
+    .carousel__button--right {
+        display: none;
+    }
+
+    #classes {
+        line-height: 1.5;
+    }
+
+    #classes,
+    #menu {
+        display: inline;
+        margin: auto;
+        position: relative;
+        top: -65vh;
+    }
+
+    .column-left,
+    .column-right {
+        margin: auto;
+        padding: 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    nav,
+    ul {
+        display: block;
+        padding: 20px;
+    }
+}
+
 
 @media (max-width: 600px) {
     nav {
