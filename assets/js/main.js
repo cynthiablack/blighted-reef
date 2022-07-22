@@ -2,19 +2,14 @@
 window.addEventListener('DOMContentLoaded', function() {
     const drink = ['zombie', 'mai tai', 'pina colada', 'dark and stormy', 'rum punch', 'rum runner', 'singapore sling'];
 
-    // Get a random element from the array
-    function getRandomDrink(drink) {
-        let index = Math.floor(Math.random() * drink.length);
-        return drink[index];
-    }
+    // Shuffle the order of the array
+    function shuffleArray(drink) {
+        drink.sort(() => Math.random() - 0.5);
+      }
+      shuffleArray(drink);
 
-    // Create a new array with 3 random elements from drink array
-    let randomDrinkArray = [];
-
-    for (let i = 0; i < 3; i++) {
-        // Check for drinks in array & remove any duplicates
-        /*randomDrinkArray.indexOf(drink) === index ?*/ randomDrinkArray.push(getRandomDrink(drink)) /*: console.log("This item already exists");*/
-        };
+      // Return 1st 3 drinks of shuffled array
+      let randomDrinkArray = drink.slice(0, 3);
 
     // Fetch an image of each element in the randomDrinkArray
     fetch(`https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=${randomDrinkArray[0]}`)
