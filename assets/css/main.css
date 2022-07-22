@@ -246,10 +246,10 @@ h3 {
     }
 
     .carousel__button--left {
-        left: -50px;
+        left: -100px;
     }
 
     .carousel__button--right {
-        right: -50px;
+        right: -70px;
     }
 }

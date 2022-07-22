@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     for (let i = 0; i < 3; i++) {
         // Check for drinks in array & remove any duplicates
-        randomDrinkArray.indexOf(drink) === -1 ? randomDrinkArray.push(getRandomDrink(drink)) : console.log("This item already exists");
+        randomDrinkArray.indexOf(drink) === index ? randomDrinkArray.push(getRandomDrink(drink)) : console.log("This item already exists");
         };
 
     // Fetch an image of each element in the randomDrinkArray
